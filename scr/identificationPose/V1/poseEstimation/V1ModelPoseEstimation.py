@@ -3,13 +3,13 @@ import cv2
 import os
 
 # Path to the model
-modelPath = "../../yolo11m-pose.pt"
+modelPath = "../best.pt"
 modelAbsolutePath = os.path.abspath(modelPath)
 
 model = YOLO(modelAbsolutePath)
 
 #Aceess the camera
-camera = cv2.VideoCapture(0)
+camera = cv2.VideoCapture(1)
 
 # Verify if the camera is opened
 if not camera.isOpened():

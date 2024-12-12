@@ -11,4 +11,5 @@ model = YOLO(modelAbsolutePath)  # load a pretrained model (recommended for trai
 model = YOLO("yolo11n-pose.yaml").load(modelAbsolutePath)  # build from YAML and transfer weights
 
 # Train the model
-results = model.train(data="coco8-pose.yaml", epochs=100, imgsz=640)
+results = model.train(data="hand-keypoints.yaml", epochs=10, imgsz=640)
+
